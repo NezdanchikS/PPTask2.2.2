@@ -24,7 +24,7 @@ public class CarsController {
     }
 
     @GetMapping()
-    public String index(@RequestParam(value = "count", required = false) Integer count, Model model) {
+    public String printCars(@RequestParam(value = "count", required = false) Integer count, Model model) {
         List<Car> cars;
 
         if (count == null || count >= 5) {
